@@ -1,0 +1,24 @@
+
+header{
+    padding: 20px;
+}
+div.header-navigations{
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div.header-navigations a{
+    color: var(--green);
+    text-decoration: none;
+}
+div.header-navigations a.logo{
+    text-align: center;
+    font-family: serif;
+    font-size: 2rem;
+}
+div.header-navigations nav a{
+    margin: 0 4px;
+}
+div.header-navigations nav:nth-child(3){
+    text-align: right;
+}
