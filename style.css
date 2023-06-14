@@ -79,7 +79,7 @@ section#about p {
 
 section#services {
   padding: 0 20px;
-}   
+}
 div.services {
   display: grid;
   grid-auto-flow: column;
@@ -105,32 +105,67 @@ a.service {
     width: 140px;
   }
 }
-a.service h3{
-    text-align: center;
-    color: #555;
-    margin-top: 10px;
+a.service h3 {
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
 }
 a.service:nth-child(odd) {
-    position: relative;
-    top: 40px;
+  position: relative;
+  top: 40px;
 }
 
-section#stages{
-    padding: 0 20px;
+section#stages {
+  padding: 0 20px;
 }
-section#stages h2{
-    text-align:center;
+section#stages h2 {
+  text-align: center;
 }
 
-div.stage{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 40px;
+div.stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 700px) {
-    div.stage{
-        grid-template-columns: 1fr;
-    }
+  div.stage {
+    grid-template-columns: 1fr;
+  }
+}
+
+div.stage ol {
+  list-style-type: none;
+}
+div.stage ol li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+div.stage ol li h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+div.stage ol li span {
+  clear: both;
+  float: left;
+  font-size: 5rem;
+  line-height: 3.6rem;
+  display: inline-block;
+  padding: 0 30px 60px 0;
+  font-weight: 300;
+  opacity: 0.2;
+  font-family: "Roboto Slab", serif;
+  color: var(--green);
+}
+div.stage p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+@media screen and (min-width: 600px) {
+  div.stage:nth-child(odd) ol {
+    order: 5;
+  }
 }
