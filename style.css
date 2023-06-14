@@ -79,7 +79,7 @@ section#about p {
 
 section#services {
   padding: 0 20px;
-}
+}   
 div.services {
   display: grid;
   grid-auto-flow: column;
@@ -104,4 +104,33 @@ a.service {
   a.service {
     width: 140px;
   }
+}
+a.service h3{
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+}
+a.service:nth-child(odd) {
+    position: relative;
+    top: 40px;
+}
+
+section#stages{
+    padding: 0 20px;
+}
+section#stages h2{
+    text-align:center;
+}
+
+div.stage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 700px) {
+    div.stage{
+        grid-template-columns: 1fr;
+    }
 }
