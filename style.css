@@ -1,79 +1,107 @@
-
-header{
-    padding: 20px;
+header {
+  padding: 20px;
 }
-div.header-navigations{
-    display:grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+div.header-navigations {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-div.header-navigations a{
-    color: var(--green);
-    text-decoration: none;
+div.header-navigations a {
+  color: var(--green);
+  text-decoration: none;
 }
-div.header-navigations a.logo{
-    text-align: center;
-    font-family: serif;
-    font-size: 2rem;
+div.header-navigations a.logo {
+  text-align: center;
+  font-family: serif;
+  font-size: 2rem;
 }
-div.header-navigations nav a{
-    margin: 0 4px;
+div.header-navigations nav a {
+  margin: 0 4px;
 }
-div.header-navigations nav:nth-child(3){
-    text-align: right;
+div.header-navigations nav:nth-child(3) {
+  text-align: right;
 }
-div.cta{
-    background-image: url('cta2.jpg');
-    background-position: center center;
-    background-size: cover;
-    color:#fff;
-    text-align: center;
+div.cta {
+  background-image: url("cta2.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
 }
-div.cta div.content{
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 100px 50px;
+div.cta div.content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 100px 50px;
 }
-div.cta div.content div.center{
-    max-width:700px;
-    margin: 0 auto;
-}
-@media screen and (max-width: 700px) {
-    div.cta div.content{
-        padding: 80px 20px;
-    }
-}
-div.cta div.content p{
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-div.cta div.content h1{
-    font-size:3rem;
-}
-div.cta div.content a.btn{
-    color:#fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 14px 30px;
-    text-transform:uppercase;
-}
-
-section{
-    margin: 100px auto;
-    max-width: 780px;
-}
-section#about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    padding: 0 20px;
-    align-items: center;
+div.cta div.content div.center {
+  max-width: 700px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
-    section#about{
-        grid-template-columns: 1fr;
-    }
+  div.cta div.content {
+    padding: 80px 20px;
+  }
 }
-section#about p{
-    color: #888;
-    margin: 20px 0;
+div.cta div.content p {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+div.cta div.content h1 {
+  font-size: 3rem;
+}
+div.cta div.content a.btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 14px 30px;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 100px auto;
+  max-width: 780px;
+}
+section#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0 20px;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  section#about {
+    grid-template-columns: 1fr;
+  }
+}
+section#about p {
+  color: #888;
+  margin: 20px 0;
+}
+
+section#services {
+  padding: 0 20px;
+}
+div.services {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding-bottom: 50px;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+a.service {
+  display: inline-block;
+  width: 300px;
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+@media screen and (max-width: 700px) {
+  div.services {
+    gap: 20px;
+  }
+  a.service {
+    width: 140px;
+  }
 }
